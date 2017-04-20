@@ -1,0 +1,8 @@
+<h1>
+  {{title}}
+</h1>
+
+<app-u-list  (uLColorEmitter)="getColor($event)" appUpper [items]="['Giants','Goblin','Wizard']"></app-u-list>
+
+<div [appMyVisibility]=false> Visibility </div>
+<div> Color emitted to main component: {{color}}</div>
